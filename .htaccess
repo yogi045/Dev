@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  ...
+  RewriteCond %{THE_REQUEST} ^.*/files/ajax/download.php\?dir\=.*\&downloadStartSecret.* [NC]
+  RewriteRule ^(.*)$ / [R=301,L]
+</IfModule>
